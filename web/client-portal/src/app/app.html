@@ -1,5 +1,8 @@
 <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 2rem; max-width: 800px; margin: 0 auto;">
-  <h1 style="color: #0078d4;">{{ title() }}</h1>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h1 style="color: #0078d4;">{{ title() }}</h1>
+    <button (click)="placeOrder()" style="padding: 10px 20px; background-color: #0078d4; color: white; border: none; cursor: pointer; border-radius: 4px;">Place Order</button>
+  </div>
   
   <p>Weather data fetched from .NET 10 Microservice.</p>
 

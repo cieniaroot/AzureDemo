@@ -24,4 +24,12 @@ export class App implements OnInit {
         error: (err) => console.error('Failed to fetch weather data', err)
       });
   }
+
+  placeOrder() {
+    this.http.post('http://localhost:5000/order', {})
+      .subscribe({
+        next: (res) => alert('Order Placed! Check the Azure Function logs.'),
+        error: (err) => console.error('Failed to place order', err)
+      });
+  }
 }
